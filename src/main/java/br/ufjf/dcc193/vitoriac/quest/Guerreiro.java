@@ -1,11 +1,17 @@
 package br.ufjf.dcc193.vitoriac.quest;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Guerreiro implements Heroi {
 
     private String nome = "";
 
-    public Guerreiro(String string) {
-        this.nome = string;
+    public Guerreiro(){
+        this("desconhecido");
+    }
+    public Guerreiro(String nome) {
+        this.nome = nome;
         System.out.println("O guerreiro "+this.nome+" chega no reino!");
     }
 
