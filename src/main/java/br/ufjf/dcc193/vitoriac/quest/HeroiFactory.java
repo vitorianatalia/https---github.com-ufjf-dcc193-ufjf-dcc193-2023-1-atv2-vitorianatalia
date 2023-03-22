@@ -1,5 +1,9 @@
 package br.ufjf.dcc193.vitoriac.quest;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
 public class HeroiFactory {
     public static Heroi createGuerreiro(String nome){
         return new Guerreiro(nome);
