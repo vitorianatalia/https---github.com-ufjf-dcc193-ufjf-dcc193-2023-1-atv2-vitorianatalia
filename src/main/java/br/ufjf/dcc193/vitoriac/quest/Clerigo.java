@@ -2,7 +2,7 @@ package br.ufjf.dcc193.vitoriac.quest;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("clerigo")
 public class Clerigo implements Heroi {
 
     private String nome = "";

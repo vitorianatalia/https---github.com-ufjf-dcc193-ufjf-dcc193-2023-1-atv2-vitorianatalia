@@ -1,7 +1,13 @@
 package br.ufjf.dcc193.vitoriac.quest;
 
-public class Missao {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component
+public class Missao {
+    @Autowired
+    @Qualifier("guerreiro")
     private Heroi heroi;
 
     public Missao(){
@@ -15,8 +21,8 @@ public class Missao {
     public void concluir() {
         System.out.println("A missão foi concluída!");
     }
-    public void setHeroi(Heroi h) {
-        this.heroi = h;
-    }
+    // public void setHeroi(Heroi h) {
+    //     this.heroi = h;
+    // }
 
 }
