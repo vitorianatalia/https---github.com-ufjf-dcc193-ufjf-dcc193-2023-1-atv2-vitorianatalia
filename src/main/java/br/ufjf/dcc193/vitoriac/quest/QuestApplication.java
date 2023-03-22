@@ -9,10 +9,10 @@ public class QuestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(QuestApplication.class, args);
 		
-		Guerreiro g1 = new Guerreiro("Conan");
-
+		Heroi h1 = HeroiFactory.createHeroi("Conan", 1);
+		Heroi h2 = HeroiFactory.createHeroi("Marc", 0);
 		Missao m1= new Missao();
-		m1.setGuerreiro(g1);
+		m1.setHeroi(h1);
 		m1.iniciar();
 		m1.concluir();
 	}

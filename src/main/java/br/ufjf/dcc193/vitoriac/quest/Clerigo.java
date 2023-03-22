@@ -1,6 +1,6 @@
 package br.ufjf.dcc193.vitoriac.quest;
 
-public class Clerigo {
+public class Clerigo implements Heroi {
 
     private String nome = "";
 
@@ -8,9 +8,10 @@ public class Clerigo {
         this.nome = string;
         System.out.println("O clerigo "+this.nome+" chega no reino!");
     }
-
+    
+    @Override
     public void agir(){
-        System.out.println("O clerigo "+this.nome+" está agindo!");
+        System.out.println("O clerigo "+this.nome+" está rezando!");
     }
 
 }

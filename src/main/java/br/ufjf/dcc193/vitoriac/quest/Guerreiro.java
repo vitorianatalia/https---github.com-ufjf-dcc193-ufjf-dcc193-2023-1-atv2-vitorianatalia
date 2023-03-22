@@ -1,6 +1,6 @@
 package br.ufjf.dcc193.vitoriac.quest;
 
-public class Guerreiro {
+public class Guerreiro implements Heroi {
 
     private String nome = "";
 
@@ -9,6 +9,7 @@ public class Guerreiro {
         System.out.println("O guerreiro "+this.nome+" chega no reino!");
     }
 
+    @Override
     public void agir(){
         System.out.println("O guerreiro "+this.nome+" está agindo!");
     }
